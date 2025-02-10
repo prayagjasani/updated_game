@@ -10,6 +10,8 @@ body {
     -webkit-touch-callout: none;
     user-select: none;
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    overflow: hidden;
+    /* Prevent body scrolling */
 }
 
 #level-title {
@@ -28,6 +30,8 @@ body {
     max-width: 600px;
     margin: 20px auto;
     padding: 10px 0;
+    overflow: hidden;
+    /* Prevent container scrolling */
 }
 
 .row {
@@ -76,8 +80,8 @@ body {
     font-family: 'Press Start 2P', cursive;
     background-color: #FEF2BF;
     color: #011F3F;
-    padding: 15px 30px;
-    font-size: 1.5rem;
+    padding: 12px 24px;
+    font-size: 1.2rem;
     border: 3px solid black;
     border-radius: 10px;
     cursor: pointer;
@@ -148,5 +152,16 @@ body {
         height: 200px;
         width: 200px;
         margin: 20px;
+    }
+}
+
+
+/* Prevent horizontal scroll on mobile */
+
+@media (max-width: 480px) {
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
     }
 }
