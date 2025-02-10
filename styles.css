@@ -3,21 +3,22 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 80vh;
-    justify-content: center;
+    min-height: 100vh;
+    justify-content: flex-start;
     background-color: #011F3F;
     touch-action: manipulation;
     -webkit-touch-callout: none;
     user-select: none;
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
     overflow: hidden;
+    padding-top: 20px;
     /* Prevent body scrolling */
 }
 
 #level-title {
     font-family: 'Press Start 2P', cursive;
     font-size: 1.5rem;
-    margin: 3% auto;
+    margin: 20px auto;
     line-height: 1.3;
     color: #FEF2BF;
     text-shadow: 2px 2px 0 #000000;
